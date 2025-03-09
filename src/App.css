@@ -1,0 +1,318 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #0d1216;
+}
+.wrapper {
+  display: grid;
+  /* height: auto; */
+  width: auto;
+  grid-template-columns: 1fr 1.4fr;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1.4fr 2fr;
+  padding: 40px 20px;
+  margin-right: 40px;
+  background-color: #fff;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  height: clamp(100vh, 1200px, 150vh);
+}
+
+.side-bar {
+  background-color: #353535;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  gap: 30px;
+  padding: 30px 10px;
+}
+.about-me-img img {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.about-me-img {
+  margin-bottom: 80px;
+}
+.about-me-main-title,
+.about-me-text,
+.about-me-phone,
+.about-me-mail,
+.about-me-location,
+.education-main-title,
+.education-shcool,
+.skills-main-text,
+.skills-list {
+  margin-left: 30px;
+}
+.about-me-main-title,
+.education-main-title,
+.skills-main-text {
+  font-size: 1.5rem;
+}
+hr {
+  width: 80%;
+  margin: 0 auto;
+  border: 0.5px solid white;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.about-me-text p {
+  margin-bottom: 25px;
+}
+.about-me-phone,
+.about-me-mail,
+.about-me-location {
+  margin-bottom: 10px;
+}
+.education-main-title,
+.education-shcool,
+.skills-main-text {
+  margin-top: 20px;
+}
+li {
+    margin-left: 10px;
+    font-size: 1.3rem;
+    line-height: 30px;
+}
+
+/* main bar styling */
+.main-bar {
+    color: #353535;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 30px;
+    gap: 130px;
+}
+.main-bar-title {
+    margin-top: 65px;
+    line-height: 0.9;
+}
+.main-bar-title span {
+    display: block;
+}
+.main-bar-title span.first-name {
+    font-size: 4rem;
+}
+.main-bar-title span.last-name {
+    font-size: 4.3rem;
+    font-weight: bold;
+    
+}
+.main-bar-title span.carrier-name {
+    font-size: 2rem;
+}
+.main-bar-details {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.references {
+  justify-self: flex-end;
+  
+}
+.experience >  h1, .references > h1 {
+    font-size: 2.5rem;
+}
+.main-divider {
+    border: 1px solid #353535;
+    width: 100%;
+}
+
+/* inouts */
+.details {
+    color: #fff;
+    padding: 90px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;    
+}
+legend {
+    font-size: 2.5rem;
+}
+fieldset {
+    padding: 20px;
+}
+.row-one , .row-two{
+    margin-bottom: 30px;   
+}
+.row-one input {
+    width: 130px;
+    height: 25px;
+    font-size: 1.3rem;
+    color: #353535;
+    padding: 5px;
+    margin-right: 25px;
+}
+ label {
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+.row-two input {
+    width: 230px;
+    height: 25px;
+    font-size: 1.2rem;
+    color: #353535;
+    padding: 5px;
+    margin-right: 25px;
+    /* margin-top: 30px; */
+}
+.add-skills {
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
+.add-skills input {
+  font-size: 1rem;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.add-skills > button {
+  padding: 5px;
+  font-weight: bold;
+  color: #0d1216;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 6px;
+}
+.add-skills > button:hover {
+  background-color: #0d1216;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.skill-list button {
+  padding: 5px;
+  margin-left: 10px;
+  background-color: #353535;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.skill-list button:hover {
+  background-color: white;
+  color: #353535;
+}
+.row input {
+    width: 170px;
+    height: 25px;
+    font-size: 1.3rem;
+    color: #353535;
+    padding: 5px;
+    margin-right: 25px;
+}
+#location {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+textarea {
+    resize: none;
+    background-color: #353535;
+    color: #fff;
+    padding: 10px;
+    font-size: 1rem;
+}
+#degree{
+    margin-top: 30px;
+}
+.delete-btn {
+  padding: 4px;
+  background-color: #eb4848;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  
+}
+.add-btn {
+  padding: 4px;
+  background-color: #199b40;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+input[type="date"] {
+    font-size: 1rem;
+}
+.position-row {
+  margin-top: 30px;
+}
+.position-row input {
+  font-size: 1rem;
+  width: 200px;
+  margin-bottom: 30px;
+}
+.date-row > input {
+    margin-right: 35px;
+    margin-bottom: 30px;
+}
+
+.detail-row textarea {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.detail-row label {
+  display: block;
+  margin-bottom: 1px;
+}
+/* job experirnce */
+.job-section {
+  margin-bottom: 10px;
+}
+.role {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.job-year {
+  position: relative;
+  display: inline-block;
+  margin-inline-start: 30px;
+}
+#work-delete-btn,#ref-delete-btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* references part */
+.reference {
+  display: inline-block;
+  width: 50%;
+  margin-top: 15px;
+  }
+  .ref-name {
+    margin-bottom: 15px;
+  }
+  .ref-phon-span {
+    margin-left: 10px;
+  }
+  .ref-email-span {
+    margin-left: 5px;
+  }
+  .reference-information {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
